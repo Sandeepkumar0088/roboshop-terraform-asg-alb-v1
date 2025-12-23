@@ -23,3 +23,4 @@ resource "aws_route53_record" "db_dns_records" {
   records   = [aws_instance.db_instance[each.key].private_ip]
 }
 
+

@@ -19,3 +19,4 @@ dev-destroy: git ## Terraform DEV env destroy
 prod-destroy: git ## Terraform PROD env destroy
 	terraform init -backend-config=env-prod/state.tfvars
 	terraform destroy -auto-approve -var-file=env-prod/main.tfvars
+
