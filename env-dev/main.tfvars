@@ -18,3 +18,12 @@ db_components    = {
          instance_type  = "t3.micro"
     }
 }
+
+app_components = {
+  catalogue = {
+    min_nodes     = 2
+    max_nodes     = 5
+    instance_type = "t3.micro"
+    ports = { ssh = 22, app = 8080 }
+  }
+}
